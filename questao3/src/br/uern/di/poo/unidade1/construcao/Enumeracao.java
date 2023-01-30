@@ -1,4 +1,4 @@
-package br.uern.di.poo.unidade1;
+package br.uern.di.poo.unidade1.construcao;
 
 public enum Enumeracao{
     PORTA_SIMPLES("feita de madeira compensada,","com fechadura simples", 50.00),

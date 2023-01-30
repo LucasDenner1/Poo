@@ -1,4 +1,4 @@
-package br.uern.di.poo.unidade1;
+package br.uern.di.poo.unidade1.construcao;
 
 public class Porta{
 
@@ -6,7 +6,7 @@ public class Porta{
     private double Altura,Largura;
     private boolean teste_pivo; 
     private final double aumento = 350.00;
-    private final double Alturap = 0.7,Largurap = 1.8;
+    private final double Alturap = 1.8,Largurap = 0.7;
 
     public Porta() {
     this.tipo_de_porta = Enumeracao.PORTA_SIMPLES;
@@ -79,6 +79,7 @@ public class Porta{
         if(teste_pivo == true){
          custo = custo + 350.00;
         }
+        
         System.out.println("O valor do custo é: R$" + custo);
 
         return custo;

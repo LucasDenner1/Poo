@@ -1,4 +1,4 @@
-package br.uern.di.poo.unidade1;
+package br.uern.di.poo.unidade1.construcao;
 
 public class Servicos {
     private static final double pPortaluxo = 0.1 ;
@@ -10,6 +10,8 @@ public class Servicos {
 
         if(porta.getTipo_de_porta() == Enumeracao.PORTA_DE_LUXO){
             custo_do_servico = instalacao;
+
+            custo_do_servico = (porta.getAltura() * porta.getLargura()) * custo_do_servico;
 
             if(porta.isTeste_pivo() == true){
                 custo_do_servico = custo_do_servico + pivo;
@@ -23,6 +25,8 @@ public class Servicos {
 
         else{
             custo_do_servico = instalacao;
+
+            custo_do_servico = (porta.getAltura() * porta.getLargura()) * custo_do_servico;
 
             if(porta.isTeste_pivo() == true){
                 custo_do_servico = custo_do_servico + pivo;
